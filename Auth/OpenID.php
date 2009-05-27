@@ -141,7 +141,7 @@ class Auth_OpenID {
      *
      * @access private
      */
-    function getQuery($query_str=null)
+    static function getQuery($query_str=null)
     {
         $data = array();
 
@@ -177,7 +177,7 @@ class Auth_OpenID {
         return $data;
     }
 
-    function params_from_string($str)
+    static function params_from_string($str)
     {
         $chunks = explode("&", $str);
 
